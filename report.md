@@ -101,6 +101,50 @@
 | DepartmentId      | Int           | 部门编号  | 主键      |     
 | DepartmentName    | Varchar(50)   | 部门姓名  |           |
 | DepartmentManager | Varchar(50)   | 部门经理  |           |
+企业表
+###
+|列名	            | 数据类型	    | 含义      | 备注      |
+| -------------     |:-------------:|:---------:| --------: |
+| CompanyID　　　　 | Int           | 公司编号  | 主键      |     
+| CompanyName       | Varchar(50)   | 公司名称  |           |
+| CompanyPwd        | Varchar(50)   | 公司密码  |           |
+| CompanyTel        | Varchar(50)   | 公司电话  |           |
+| CompanyTime       | Varchar(50)   | 注册时间  |           |
+| CompanyAddress    | Varchar(50)   | 公司地址  |           |
+工作表
+###
+|列名　　　　　　　 | 数据类型	    | 含义      | 备注      |
+| -------------     |:-------------:|:---------:| --------: |
+| JobID　　　　　　 | Int           | 工作编号  | 主键      |     
+| JobName           | Varchar(50)   | 工作名称  |           |
+| JobAddress        | Varchar(50)   | 工作地址  |           |
+| JobTime           | Varchar(50)   | 工作时间  |           |
+| JobPayment        | Varchar(50)   | 工作薪酬  |           |
+| JobRemain         | Varchar(50)   | 工作余量  |           |
+| JobDiscribe       | Varchar(50)   | 工作描述  |           |
+会员表
+###
+|列名	            | 数据类型	    | 含义      | 备注      |
+| -------------     |:-------------:|:---------:| --------: |
+| MemberID　　　　　| Int           | 会员号    | 主键      |     
+| MemberName        | Varchar(50)   | 会员名    |           |
+| MemberPwd         | Varchar(50)   | 会员密码  |           |
+| MemberTel         | Varchar(50)   | 会员电话  |           |
+| MemberAdress      | Varchar(50)   | 会员住址  |           |
+| MemberMail        | Varchar(50)   | 会员邮箱  |           |
+预订工作表
+###
+|列名　　　　　　　 | 数据类型	    | 含义      | 备注      |
+| -------------     |:-------------:|:---------:| --------: |
+| OrderID   　　　　| Int           | 预订编号  | 主键      |     
+| MemberID          | Int           | 会员编号  | 外键      |
+| JobID             |Int            | 工作编号  | 外键      |
+| OrderName         | Varchar(50)   | 预订表名  |           |
+| JobTime           | Varchar(50)   | 工作时间  |           |
+| JobPayment        | Varchar(50)   | 工作薪酬  |           |
+| JobRemain         | Varchar(50)   | 工作余量  |           |
+| JobDiscribe       | Varchar(50)   | 工作描述  |           |
+
 
 #####3.2.2  实体关联模型
 #####3.2.3  基于键的数据模型
