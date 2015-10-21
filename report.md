@@ -92,7 +92,13 @@
 | EmployeeTel       | Varchar(50)   | 员工电话  |           |
 | EmployeeDep       | Varchar(50)   | 员工部门  | 外键      |
 | EmployeePosition  | Varchar(50)   | 员工职位  |           |
-
+部门表
+###
+| 列名	            | 数据类型	    | 含义      | 备注      |
+| -------------     |:-------------:|:---------:| --------: |
+| DepartmentId      | Int           | 部门编号  | 主键      |     
+| DepartmentName    | Varchar(50)   | 部门姓名  |           |
+| DepartmentManager | Varchar(50)   | 部门经理  |           |
 #####3.2.2  实体关联模型
 #####3.2.3  基于键的数据模型
 ####3.3 过程建模	
