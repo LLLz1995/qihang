@@ -1,0 +1,148 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>启航兼职管理信息系统</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/fullcalendar.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+<!--Header-part-->
+<div id="header">
+  <h1><font style="color:gray"><a href="index.html">启航兼职</a></font></h1>
+</div>
+<!--close-Header-part--> 
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li class="divider"></li>
+        <li><a href="adminlogin.jsp"><i class="icon-key"></i>登出</a></li>
+      </ul>
+    </li>
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+  </ul>
+</div>
+<!--sidebar-menu-->
+<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i>后台主页</a>
+  <ul>
+    <li><a href="background.jsp"><i class="icon icon-home"></i> <span>后台主页</span></a> </li>
+    <li><a href="information.jsp"><i class="icon-pencil"></i> <span>兼职信息管理</span></a> </li>
+    <li class="submenu"> <a href="#"><i class="icon icon-list"></i> <span>用户管理</span> <span class="label label-important">3</span></a>
+      <ul>
+        <li><a href="userregister.jsp">注册新用户</a></li>
+        <li><a href="userinformation.jsp">用户信息管理</a></li>
+        <li><a href="userappointment.jsp">用户预约管理</a></li>
+      </ul>
+    </li>
+    <li class="submenu active"><a href="#"><i class="icon icon-th"></i> <span>商家管理</span> <span class="label label-important">3</span></a> 
+   	  <ul>
+        <li class="active"><a href="merchantregister.jsp">注册新商家</a></li>
+        <li><a href="merchantinformation.jsp">商家信息管理</a></li>
+        <li><a href="merchantjob.jsp">商家兼职管理</a></li>
+      </ul>
+      </li>
+    <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>员工管理</span> <span class="label label-important">4</span></a>
+      <ul>
+        <li><a href="staffregister.jsp">添加新员工</a></li>
+        <li><a href="staffinformation.jsp">员工信息管理</a></li>
+        <li><a href="user-staff.jsp">用户组员工管理</a></li>
+        <li><a href="merchant-staff.jsp">商家组员工管理</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!--main-container-part-->
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"><a href="#" title="返回后台主页" class="tip-bottom"><i class="icon-home"></i>Home</a><a href="#" class="current">商家管理</a><a href="#" class="current">注册新商家</a> </div>
+  	<h1>注册新商家</h1>
+  </div> 
+  	 <div class="container-fluid">
+   <hr>
+  	<div class="row-fluid">
+    	<div class="span6">
+     	<div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>merchant-info</h5>
+        </div>
+        <div class="widget-content nopadding">
+          <form action="addmerchant" method="post" class="form-horizontal">
+            <div class="control-group  warning">
+              <label class="control-label">公司名称 :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="CompanyName" name="CompanyName"/>
+              </div>
+            </div>
+            <div class="control-group  warning">
+              <label class="control-label">公司年限 :</label>
+              <div class="controls">
+                <input type="radio" value="半年" name="CompanyAge" />半年
+                <input type="radio" value="一年" name="CompanyAge" />一年
+                <input type="radio" value="两年" name="CompanyAge"/>两年
+                <input type="radio" value="三年" name="CompanyAge"/>三年
+                <input type="radio" value="四年" name="CompanyAge"/>四年
+              </div>
+            </div>
+            <div class="control-group warning">
+              <label class="control-label">公司密码 :</label>
+              <div class="controls">
+              	<input type="password"  class="span11" placeholder="CompanyPwd" name="CompanyPwd"  />               
+              </div>
+            </div>
+            <div class="control-group warning">
+              <label class="control-label">确认密码 :</label>
+              <div class="controls">
+              	<input type="password"  class="span11" placeholder="Copy Pwd"  />               
+              </div>
+            </div>
+            <div class="control-group warning">
+              <label class="control-label">公司电话 :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="CompanyTel" name="CompanyTel" />
+              </div>
+            </div>
+            <div class="control-group warning">
+              <label class="control-label">注册时间 :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="CompanyTime" name="CompanyTime" />
+              </div>
+            </div>
+            <div class="control-group warning">
+              <label class="control-label">公司地址 :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="CompanyAddress" name="CompanyAddress" />
+              </div>
+            </div>
+            <div class="form-actions">
+              <input type="submit" class="btn btn-success" walue="Submit">
+            </div>
+          </form>
+        </div>
+        </div>
+       </div>
+      </div>
+   </div>
+</div>
+<!--End-main-container-part-->
+
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2015 &copy;启航兼职俱乐部管理信息系统 </div>
+</div>
+<!--end-Footer-part-->
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/matrix.js"></script>
+</body>
+</html>
