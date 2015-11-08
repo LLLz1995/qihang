@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>启航兼职管理信息系统</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/fullcalendar.css" />
+<link rel="stylesheet" href="css/matrix-style.css" />
+<link rel="stylesheet" href="css/matrix-media.css" />
+<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><font style="color:gray"><a href="index.html">启航兼职</a></font></h1>
+</div>
+<!--close-Header-part--> 
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+    <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">Welcome User</span><b class="caret"></b></a>
+      <ul class="dropdown-menu">
+        <li class="divider"></li>
+        <li><a href="login.html"><i class="icon-key"></i>登出</a></li>
+      </ul>
+    </li>
+    <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">Logout</span></a></li>
+  </ul>
+</div>
+<!--sidebar-menu-->
+<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i>后台主页</a>
+  <ul>
+    <li><a href="background.html"><i class="icon icon-home"></i> <span>后台主页</span></a> </li>
+    <li><a href="information.html"><i class="icon-pencil"></i> <span>兼职信息管理</span></a> </li>
+    <li class="submenu active"> <a href="#"><i class="icon icon-list"></i> <span>用户管理</span> <span class="label label-important">3</span></a>
+      <ul>
+        <li class="active"><a href="userregister.html">注册新用户</a></li>
+        <li><a href="userinformation.html">用户信息管理</a></li>
+        <li><a href="userappointment.html">用户预约管理</a></li>
+      </ul>
+    </li>
+    <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>商家管理</span> <span class="label label-important">3</span></a> 
+   	  <ul>
+        <li><a href="merchantregister.html">注册新商家</a></li>
+        <li><a href="merchantinformation.html">商家信息管理</a></li>
+        <li><a href="merchantjob.html">商家兼职管理</a></li>
+      </ul>
+      </li>
+    <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>员工管理</span> <span class="label label-important">4</span></a>
+      <ul>
+        <li><a href="staffregister.html">添加新员工</a></li>
+        <li><a href="staffinformation.html">员工信息管理</a></li>
+        <li><a href="user-staff.html">用户组员工管理</a></li>
+        <li><a href="merchant-staff.html">商家组员工管理</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<!--main-container-part-->
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"><a href="#" title="返回后台主页" class="tip-bottom"><i class="icon-home"></i>Home</a><a href="#" class="current">用户管理</a><a href="#" class="current">注册新用户</a> </div>
+  	<h1>注册新用户</h1>
+  </div>
+   <div class="container-fluid">
+   <hr>
+  	<div class="row-fluid">
+    	<div class="span6">
+     	<div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>user-info</h5>
+        </div>
+        <div class="widget-content nopadding">
+          <form action="#" method="get" class="form-horizontal">
+            <div class="control-group">
+              <label class="control-label">会员名 :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="MemberName" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">会员密码 :</label>
+              <div class="controls">
+              	<input type="password"  class="span11" placeholder="MemberPwd"  />               
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">确认密码 :</label>
+              <div class="controls">
+              	<input type="password"  class="span11" placeholder="Copy Pwd"  />               
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">会员电话 :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="MemberTel" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">会员邮箱 :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="MemberMail" />
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">会员住址 :</label>
+              <div class="controls">
+                <input type="text" class="span11" placeholder="MemberAdress" />
+              </div>
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        </div>
+        </div>
+       </div>
+      </div>
+   </div>
+</div> 
+<!--End-main-container-part-->
+
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2015 &copy;启航兼职俱乐部管理信息系统 </div>
+</div>
+<!--end-Footer-part-->
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.ui.custom.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/matrix.js"></script>
+</body>
+</html>
