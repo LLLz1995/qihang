@@ -167,7 +167,7 @@
 | MemberName        | Varchar(50)   | 会员名    |           |
 | MemberPwd         | Varchar(50)   | 会员密码  |           |
 | MemberTel         | Varchar(50)   | 会员电话  |           |
-| MemberAdress      | Varchar(50)   | 会员住址  |           |
+| MemberAddress     | Varchar(50)   | 会员住址  |           |
 | MemberMail        | Varchar(50)   | 会员邮箱  |           |
 预订工作表
 ###
