@@ -195,7 +195,8 @@
 ###
 |列名　　　　　　　 | 数据类型	    | 含义      | 备注      |
 | -------------     |:-------------:|:---------:| --------: |
-| JobID　　　　　　 | Int           | 工作编号  | 主键      |     
+| JobID　　　　　　 | Int           | 工作编号  | 主键      | 
+| CompanyName       | Varchar(50)   | 公司名称  |           |
 | JobName           | Varchar(50)   | 工作名称  |           |
 | JobAddress        | Varchar(50)   | 工作地址  |           |
 | JobTime           | Varchar(50)   | 工作时间  |           |
