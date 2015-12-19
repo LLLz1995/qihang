@@ -223,7 +223,6 @@
 | OrderName         | Varchar(50)   | 预订表名  |           |
 | JobTime           | Varchar(50)   | 工作时间  |           |
 | JobPayment        | Varchar(50)   | 工作薪酬  |           |
-| JobRemain         | Varchar(50)   | 工作余量  |           |
 | JobDiscribe       | Varchar(50)   | 工作描述  |           |
 
 
